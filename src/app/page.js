@@ -152,7 +152,7 @@ const page = () => {
             <h3 className="text-sm font-semibold text-slate-900">
               ASUS Vivobook 15
             </h3>
-            <h4 className="text-sm text-blue-600 font-bold mt-2">$450.00</h4>
+            <h4 className="text-sm text-blue-600 font-bold mt-2">$400.00</h4>
           </div>
         </a>
       </div>
