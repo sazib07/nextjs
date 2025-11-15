@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div> blog page</div>
+    <div>Dynamic page</div>
   )
 }
 
