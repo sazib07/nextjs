@@ -3,10 +3,8 @@ import React from 'react'
 const page = () => {
   return (
    <>
-
   {/*  */}
   <div className="bg-gray-900">
-   
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <div
         aria-hidden="true"
