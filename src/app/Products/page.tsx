@@ -2,31 +2,33 @@ import React from 'react'
 
 const page =async () => {
      const data = await fetch('https://fakestoreapi.com/products')
-  const product = await data.json()
-  console.log(product)
+  const products = await data.json()
+  console.log(products);
   return (
-    <div>
-    <div className="p-4 mx-auto lg:max-w-6xl md:max-w-4xl">
+// lg:max-w-6xl md:max-w-4xl
+    <div className="p-4 mx-auto ">
   <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 sm:mb-8">
     Premium Threads
   </h2>
-  <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
+    {products.map((product)=>(
+
     <div className="bg-white flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
       <a href="javascript:void(0)" className="block">
         <div className="w-full">
           <img
-            src="https://readymadeui.com/images/product1.webp"
+            src={product.image}
             alt="Product-1"
             className="w-full aspect[18/24] object-cover object-top"
           />
         </div>
         <div className="p-4">
           <h5 className="text-sm sm:text-base font-semibold text-slate-900 line-clamp-2">
-            Lexicon Luxe
+            {product.title}
           </h5>
           <div className="mt-2 flex items-center flex-wrap gap-2">
             <h6 className="text-sm sm:text-base font-semibold text-slate-900">
-              $10
+            {product.price}
             </h6>
             <div
               className="bg-slate-100 w-8 h-8 flex items-center justify-center rounded-full cursor-pointer ml-auto"
@@ -50,18 +52,22 @@ const page =async () => {
       <div className="min-h-[50px] p-4 pt-0">
         <button
           type="button"
-          className="absolute left-0 right-0 bottom-3 cursor-pointer max-w-[88%] mx-auto text-sm px-2 py-2 font-medium w-full bg-blue-600 hover:bg-blue-700 text-white tracking-wide outline-none border-none rounded-sm"
+          className="absolute left-0 right-0 bottom-3 cursor-pointer max-w-[88%] mx-auto text-sm px-2 py-2 font-medium w-full bg-blue-600 hover:bg-blue-700 text- tracking-wide outline-none border border-gray-500 rounded-sm"
         >
           Add to cart
         </button>
+      
       </div>
     </div>
  
+    ))}
   </div>
 </div>
 
-    </div>
+ 
   )
 }
 
 export default page
+
+
