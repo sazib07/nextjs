@@ -10,16 +10,16 @@ const page =async () => {
   <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 sm:mb-8">
     Premium Threads
   </h2>
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
     {products.map((product)=>(
 
     <div className="bg-white flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
       <a href="javascript:void(0)" className="block">
-        <div className="w-full">
+        <div className="w-full items-center ">
           <img
             src={product.image}
             alt="Product-1"
-            className="w-full aspect[18/24] object-cover object-top"
+            className="w-full aspect[18/24]  h-[300px]"
           />
         </div>
         <div className="p-4">
