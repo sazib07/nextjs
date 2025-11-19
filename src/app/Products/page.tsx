@@ -5,8 +5,8 @@ const page =async () => {
   const products = await data.json()
   console.log(products);
   return (
-// lg:max-w-6xl md:max-w-4xl
     <div className="p-4 mx-auto ">
+      {/* // lg:max-w-6xl md:max-w-4xl */}
   <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 sm:mb-8">
     Premium Threads
   </h2>
@@ -23,8 +23,11 @@ const page =async () => {
           />
         </div>
         <div className="p-4">
-          <h5 className="text-sm sm:text-base font-semibold text-slate-900 line-clamp-2">
+          <h5 className="text-lg sm:text-base font-semibold text-slate-900 line-clamp-2">
             {product.title}
+          </h5>
+           <h5 className="text-sm sm:text-base font-semibold text-slate-900 line-clamp-2">
+            {product.description}
           </h5>
           <div className="mt-2 flex items-center flex-wrap gap-2">
             <h6 className="text-sm sm:text-base font-semibold text-slate-900">
@@ -64,7 +67,6 @@ const page =async () => {
   </div>
 </div>
 
- 
   )
 }
 
