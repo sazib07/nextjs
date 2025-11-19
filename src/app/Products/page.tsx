@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page =async () => {
+const products =async () => {
      const data = await fetch('https://fakestoreapi.com/products')
   const products = await data.json()
   console.log(products);
@@ -70,6 +70,6 @@ const page =async () => {
   )
 }
 
-export default page
+export default products
 
 
