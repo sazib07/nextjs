@@ -23,7 +23,7 @@ const page =async () => {
           />
         </div>
         <div className="p-4">
-          <h5 className="text-lg sm:text-base font-semibold text-slate-900 line-clamp-2">
+          <h5 className="text-[24px] sm:text-base font-bold text-slate-900 line-clamp-2">
             {product.title}
           </h5>
            <h5 className="text-sm sm:text-base font-semibold text-slate-900 line-clamp-2">
