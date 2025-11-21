@@ -20,7 +20,7 @@ const page = () => {
           </time>
           <a
             href="#"
-            className="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800"
+            className="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-blue-800"
           >
             Marketing
           </a>
