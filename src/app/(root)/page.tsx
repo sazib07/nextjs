@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import Products from '../Products/page'
 
 const page = async () => {
    
@@ -67,7 +67,7 @@ const page = async () => {
     </div>
   </div>
   
- 
+ <Products/>
 </>
 
   )
