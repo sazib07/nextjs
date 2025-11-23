@@ -3,6 +3,7 @@ import React from 'react'
 const products =async () => {
      const data = await fetch('https://fakestoreapi.com/products')
   const products = await data.json()
+
   console.log(products);
   return (
     <div className="p-4 mx-auto ">
