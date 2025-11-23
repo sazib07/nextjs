@@ -3,7 +3,7 @@ import React from 'react'
 import Products from '../Products/page'
 
 const page = async () => {
-   throw new Error ("something went wrong")
+
   return (
    <>
   {/*  */}

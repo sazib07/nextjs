@@ -13,9 +13,10 @@ const products =async () => {
   <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
     {products.map((products)=>(
 
-    <div className="bg-gray-300 flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
+    <div key={products.id} className="bg-gray-300 flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
       <a href="javascript:void(0)" className="block">
         <div className="w-full items-center ">
+          
           <img
             src={products.image}
             alt="Product-1"
