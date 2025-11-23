@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 const products =async () => {
@@ -17,12 +18,9 @@ const products =async () => {
     <div key={products.id} className="bg-gray-300 flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
       <a href="javascript:void(0)" className="block">
         <div className="w-full items-center ">
-          
-          <img
-            src={products.image}
-            alt="Product-1"
-            className="w-full aspect[18/24]  h-[300px]"
-          />
+          <Image src={products.image} width={400} height={400} alt={products.title} 
+          className="w-[400px] h-[400px] "/>
+
         </div>
         <div className="p-4">
           <h5 className="text-[24px] sm:text-base font-bold text-slate-900 line-clamp-2">
