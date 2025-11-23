@@ -11,27 +11,27 @@ const products =async () => {
     Premium Threads
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
-    {products.map((product)=>(
+    {products.map((products)=>(
 
     <div className="bg-gray-300 flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
       <a href="javascript:void(0)" className="block">
         <div className="w-full items-center ">
           <img
-            src={product.image}
+            src={products.image}
             alt="Product-1"
             className="w-full aspect[18/24]  h-[300px]"
           />
         </div>
         <div className="p-4">
           <h5 className="text-[24px] sm:text-base font-bold text-slate-900 line-clamp-2">
-            {product.title}
+            {products.title}
           </h5>
            <h5 className="text-sm sm:text-base font-semibold text-slate-900 line-clamp-2">
-            {product.description}
+            {products.description}
           </h5>
           <div className="mt-2 flex items-center flex-wrap gap-2">
             <h6 className="text-sm sm:text-base font-semibold text-slate-900">
-            {product.price}
+            {products.price}
             </h6>
             <div
               className="bg-slate-100 w-8 h-8 flex items-center justify-center rounded-full cursor-pointer ml-auto"
