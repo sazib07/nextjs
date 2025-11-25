@@ -18,7 +18,7 @@ const products =async () => {
     <div key={products.id} className="bg-gray-200 flex flex-col rounded-sm overflow-hidden shadow-md hover:scale-[1.01] transition-all relative">
       <a href="javascript:void(0)" className="block">
         <div className="w-full items-center ">
-          <Image src={products.image} width={400} height={400} alt={products.title} 
+          <Image src={products.image} width={400} height={400} loading="lazy" alt={products.title} 
           className="w-[400px] h-[400px]  "/>
 
         </div>
