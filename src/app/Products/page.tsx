@@ -19,7 +19,7 @@ const products =async () => {
       <a href="javascript:void(0)" className="block">
         <div className="w-full items-center ">
           <Image src={products.image} width={400} height={400} alt={products.title} 
-          className="w-[400px] h-[400px] "/>
+          className="w-[400px] h-[400px]  "/>
 
         </div>
         <div className="p-4">
