@@ -9,7 +9,7 @@ const products =async () => {
   return (
     <div className="p-4 mx-auto ">
       {/* // lg:max-w-6xl md:max-w-4xl */}
-  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 sm:mb-8">
+  <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-6 sm:mb-8">
     Premium Threads
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
