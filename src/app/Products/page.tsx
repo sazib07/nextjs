@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import React from 'react'
 
 const products =async () => {
      const data = await fetch('https://fakestoreapi.com/products')
